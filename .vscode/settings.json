@@ -1,0 +1,3 @@
+{
+  "dotnet.defaultSolution": "net-nextjs-docker-k8s-microservices.sln"
+}
