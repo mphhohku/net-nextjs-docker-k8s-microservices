@@ -12,6 +12,7 @@ public class AuctionDbContext : DbContext
     }
 
     public DbSet<Auction> Auctions { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

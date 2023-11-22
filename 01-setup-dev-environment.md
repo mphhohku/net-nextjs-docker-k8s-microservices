@@ -26,6 +26,9 @@
 
 ## Download and install the latest version of [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
+## Download and install .NET dev-tools 
+```dotnet tool install --global dotnet-ef```
+
 VS Code Extensions
 
 - C# Dev Kit
