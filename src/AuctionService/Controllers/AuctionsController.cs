@@ -95,7 +95,7 @@ public class AuctionsController : ControllerBase
         }
         // TODO: check seller == username
         _context.Auctions.Remove(auction);
-        await _publishEndpoint.Publish(_mapper.Map<AuctionDeleted>(new {Id = auction.Id.ToString()}));
+        await _publishEndpoint.Publish<AuctionDeleted>(new {Id = auction.Id.ToString()});
         var result = await _context.SaveChangesAsync() > 0;
         if (!result) return BadRequest("Could not update the database.");
         return Ok();
