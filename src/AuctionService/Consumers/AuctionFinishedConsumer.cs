@@ -2,7 +2,6 @@
 using AuctionService.Entities;
 using Contracts;
 using MassTransit;
-using Microsoft.EntityFrameworkCore;
 
 namespace AuctionService;
 
